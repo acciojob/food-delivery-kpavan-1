@@ -1,6 +1,8 @@
 package com.driver.io.entity;
 
-import java.io.Serializable;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,6 +10,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity(name = "users")
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class UserEntity{
 
 	@Id
